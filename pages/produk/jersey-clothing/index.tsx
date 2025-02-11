@@ -43,7 +43,7 @@ function Cards() {
     <>
       <Filter
         options={filterOptions}
-        selectedOption={defaultOption || filterOptions[0]} // Pastikan tidak undefined
+        selectedOption={defaultOption || filterOptions[0]}
         onChange={handleFilterChange}
         mb={16}
       />

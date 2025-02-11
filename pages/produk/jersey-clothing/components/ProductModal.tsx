@@ -14,7 +14,7 @@ interface ProductModalProps {
   selectedImage: string | null;
 }
 
-export const ProductModal = ({
+const ProductModal = ({
   isOpen,
   onClose,
   selectedImage,
