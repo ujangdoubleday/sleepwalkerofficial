@@ -53,3 +53,5 @@ export const ProductModal = ({
     </Modal>
   );
 };
+
+export default ProductModal;

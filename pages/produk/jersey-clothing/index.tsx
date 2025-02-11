@@ -16,8 +16,8 @@ import { useRouter } from "next/router";
 import { kebabCase } from "lodash-es";
 import { useIsClient } from "usehooks-ts";
 import { useFilter } from "@/hooks/useFilter";
-import { ProductCard, ProductCardSkeleton } from "./components/ProductCard";
-import { ProductModal } from "./components/ProductModal";
+import ProductCard, { ProductCardSkeleton } from "./components/ProductCard";
+import ProductModal from "./components/ProductModal";
 
 interface FilterOption {
   label: string;
