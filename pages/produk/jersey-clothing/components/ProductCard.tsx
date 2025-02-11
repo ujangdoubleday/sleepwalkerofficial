@@ -14,7 +14,7 @@ interface ProductCardProps {
   onImageClick: (image: string) => void;
 }
 
-export const ProductCard = ({ product, onImageClick }: ProductCardProps) => {
+const ProductCard = ({ product, onImageClick }: ProductCardProps) => {
   return (
     <ShadowBox
       shadowColor="white"
@@ -67,3 +67,5 @@ export const ProductCardSkeleton = () => {
     </ShadowBox>
   );
 };
+
+export default ProductCard;
