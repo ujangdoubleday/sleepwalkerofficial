@@ -1,3 +1,5 @@
+import { Suspense } from "react";
+import { Skeleton, SkeletonCircle, SkeletonText } from "@chakra-ui/react";
 import { NextSeo } from "next-seo";
 import Image from "next/image";
 import {
@@ -166,6 +168,38 @@ function Cards() {
   );
 }
 
+function SkeletonLoading() {
+  return (
+    <Grid
+      templateColumns={{
+        base: "100%",
+        lg: "repeat(2, 1fr)",
+        xl: "repeat(3, 1fr)",
+      }}
+      gap={6}
+    >
+      {[...Array(6)].map((_, index) => (
+        <GridItem key={index} display="flex">
+          <ShadowBox
+            shadowColor="white"
+            borderWidth="2px"
+            borderRadius="4px"
+            w="100%"
+          >
+            <Skeleton height="200px" />
+            <Box p={4} pb={6}>
+              <SkeletonText mt="4" noOfLines={1} spacing="4" />
+              <HStack gap={2} mt={4}>
+                <Skeleton height="40px" width="100%" />
+              </HStack>
+            </Box>
+          </ShadowBox>
+        </GridItem>
+      ))}
+    </Grid>
+  );
+}
+
 export default function JerseyDanClothing() {
   const router = useRouter();
   const isClient = useIsClient();
@@ -220,7 +254,9 @@ export default function JerseyDanClothing() {
         >
           Kategori
         </Text>
-        {isClient && router.isReady && <Cards />}
+        <Suspense fallback={<SkeletonLoading />}>
+          {isClient && router.isReady && <Cards />}
+        </Suspense>
       </Container>
       <br />
     </>
