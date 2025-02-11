@@ -1,9 +1,9 @@
-export const BAJU_TYPES = ["Jersey", "Clothing", "Old Plane"];
+export const BAJU_TYPES = ["Jersey", "Clothing", "OldPlane"];
 
 export const BAJU = [
   {
     type: "Jersey",
-    name: "Jersey",
+    name: "Jersey-1",
     link: "https://wa.me/p/9411173225570898/6282130718572",
     images: [
       "/images/produk/jersey-clothing/gambar-1-d.jpg",
@@ -12,7 +12,7 @@ export const BAJU = [
   },
   {
     type: "Jersey",
-    name: "Jersey",
+    name: "Jersey-2",
     link: "https://wa.me/p/9411173225570898/6282130718572",
     images: [
       "/images/produk/jersey-clothing/gambar-2-d.jpg",
@@ -21,7 +21,7 @@ export const BAJU = [
   },
   {
     type: "Jersey",
-    name: "Jersey",
+    name: "Jersey-3",
     link: "https://wa.me/p/9411173225570898/6282130718572",
     images: [
       "/images/produk/jersey-clothing/gambar-3-d.jpg",
@@ -30,7 +30,7 @@ export const BAJU = [
   },
   {
     type: "Jersey",
-    name: "Jersey",
+    name: "Jersey-4",
     link: "https://wa.me/p/9411173225570898/6282130718572",
     images: [
       "/images/produk/jersey-clothing/gambar-4-d.jpg",
@@ -39,7 +39,7 @@ export const BAJU = [
   },
   {
     type: "Jersey",
-    name: "Jersey",
+    name: "Jersey-5",
     link: "https://wa.me/p/9411173225570898/6282130718572",
     images: [
       "/images/produk/jersey-clothing/gambar-5-d.jpg",
@@ -48,7 +48,7 @@ export const BAJU = [
   },
   {
     type: "Jersey",
-    name: "Jersey",
+    name: "Jersey-6",
     link: "https://wa.me/p/9411173225570898/6282130718572",
     images: [
       "/images/produk/jersey-clothing/gambar-6-d.jpg",
@@ -57,7 +57,7 @@ export const BAJU = [
   },
   {
     type: "Jersey",
-    name: "Jersey",
+    name: "Jersey-7",
     link: "https://wa.me/p/9411173225570898/6282130718572",
     images: [
       "/images/produk/jersey-clothing/gambar-7-d.jpg",
@@ -66,7 +66,7 @@ export const BAJU = [
   },
   {
     type: "Jersey",
-    name: "Jersey",
+    name: "Jersey-8",
     link: "https://wa.me/p/9411173225570898/6282130718572",
     images: [
       "/images/produk/jersey-clothing/gambar-8-d.jpg",
@@ -75,7 +75,7 @@ export const BAJU = [
   },
   {
     type: "Jersey",
-    name: "Jersey",
+    name: "Jersey-9",
     link: "https://wa.me/p/9411173225570898/6282130718572",
     images: [
       "/images/produk/jersey-clothing/gambar-9-d.jpg",
@@ -84,7 +84,7 @@ export const BAJU = [
   },
   {
     type: "Jersey",
-    name: "Jersey",
+    name: "Jersey-10",
     link: "https://wa.me/p/9411173225570898/6282130718572",
     images: [
       "/images/produk/jersey-clothing/gambar-10-d.jpg",
@@ -93,7 +93,7 @@ export const BAJU = [
   },
   {
     type: "Jersey",
-    name: "Jersey",
+    name: "Jersey-11",
     link: "https://wa.me/p/9411173225570898/6282130718572",
     images: [
       "/images/produk/jersey-clothing/gambar-11-d.jpg",
@@ -102,7 +102,7 @@ export const BAJU = [
   },
   {
     type: "Jersey",
-    name: "Jersey",
+    name: "Jersey-12",
     link: "https://wa.me/p/9411173225570898/6282130718572",
     images: [
       "/images/produk/jersey-clothing/gambar-12-d.jpg",
@@ -116,8 +116,8 @@ export const BAJU = [
   // image: "/images/ecosystem/if-labs.png",
   // },
   {
-    type: "Old Plane",
-    name: "Old Plane",
+    type: "OldPlane",
+    name: "OldPlane-1",
     link: "https://shopee.co.id/Kemeja-Koko-Kemko-Kemeja-Sanghai-Tanpa-Kerah-Pria-Casual-Dewasa-i.1306526001.29924910165?sp_atk=6b1748f6-6987-4c5d-b2d2-988e2f409ac9",
     images: [
       "/images/produk/old-plane/main.jpg",
@@ -132,8 +132,8 @@ export const BAJU = [
     ],
   },
   {
-    type: "Old Plane",
-    name: "Old Plane",
+    type: "OldPlane",
+    name: "OldPlane-2",
     link: "https://shopee.co.id/Oldplane-Kemeja-Pria-Premium-Casual-Lengan-Panjang-Kemeja-Kantor-Model-Slimfit-i.1306526001.26924904223?sp_atk=fdaf6a9e-6c71-4be9-92c6-2962751ecd41",
     images: [
       "/images/produk/old-plane/kasual.jpg",
@@ -151,8 +151,8 @@ export const BAJU = [
     ],
   },
   {
-    type: "Old Plane",
-    name: "Old Plane",
+    type: "OldPlane",
+    name: "OldPlane-3",
     link: "https://shopee.co.id/Old-plane-kemeja-casual-premium-quality-i.1306526001.25390957314?sp_atk=eb6ecc69-ba33-4e4c-987d-61ee73f2b708",
     images: [
       "/images/produk/old-plane/p1.jpg",
@@ -166,57 +166,84 @@ export const BAJU = [
     ],
   },
   {
-    type: "Old Plane",
-    name: "Old Plane",
+    type: "OldPlane",
+    name: "OldPlane-4",
     link: "https://shopee.co.id/Kemeja-Koko-Kemko-Kemeja-Sanghai-Tanpa-Kerah-Pria-Casual-Dewasa-i.1306526001.29924910165?sp_atk=6b1748f6-6987-4c5d-b2d2-988e2f409ac9",
-    images: ["/images/produk/old-plane/p9.jpg"],
+    images: [
+      "/images/produk/old-plane/p9.jpg",
+      "/images/produk/old-plane/p10.jpg",
+    ],
   },
   {
-    type: "Old Plane",
-    name: "Old Plane",
+    type: "OldPlane",
+    name: "OldPlane-5",
     link: "https://shopee.co.id/Kemeja-Koko-Kemko-Kemeja-Sanghai-Tanpa-Kerah-Pria-Casual-Dewasa-i.1306526001.29924910165?sp_atk=6b1748f6-6987-4c5d-b2d2-988e2f409ac9",
-    images: ["/images/produk/old-plane/p10.jpg"],
+    images: [
+      "/images/produk/old-plane/p11.jpg",
+      "/images/produk/old-plane/p12.jpg",
+    ],
   },
   {
-    type: "Old Plane",
-    name: "Old Plane",
+    type: "OldPlane",
+    name: "OldPlane-6",
     link: "https://shopee.co.id/Kemeja-Koko-Kemko-Kemeja-Sanghai-Tanpa-Kerah-Pria-Casual-Dewasa-i.1306526001.29924910165?sp_atk=6b1748f6-6987-4c5d-b2d2-988e2f409ac9",
-    images: ["/images/produk/old-plane/p11.jpg"],
+    images: [
+      "/images/produk/old-plane/p13.jpg",
+      "/images/produk/old-plane/p14.jpg",
+    ],
   },
   {
-    type: "Old Plane",
-    name: "Old Plane",
+    type: "OldPlane",
+    name: "OldPlane-7",
     link: "https://shopee.co.id/Oldplane-Kemeja-Pria-Premium-Casual-Lengan-Panjang-Kemeja-Kantor-Model-Slimfit-i.1306526001.26924904223?sp_atk=fdaf6a9e-6c71-4be9-92c6-2962751ecd41",
-    images: ["/images/produk/old-plane/p19.jpg"],
+    images: [
+      "/images/produk/old-plane/p19.jpg",
+      "/images/produk/old-plane/p20.jpg",
+    ],
   },
   {
-    type: "Old Plane",
-    name: "Old Plane",
+    type: "OldPlane",
+    name: "OldPlane-8",
     link: "https://shopee.co.id/Oldplane-Kemeja-Pria-Premium-Casual-Lengan-Panjang-Kemeja-Kantor-Model-Slimfit-i.1306526001.26924904223?sp_atk=fdaf6a9e-6c71-4be9-92c6-2962751ecd41",
-    images: ["/images/produk/old-plane/p20.jpg"],
+    images: [
+      "/images/produk/old-plane/p21.jpg",
+      "/images/produk/old-plane/p22.jpg",
+    ],
   },
   {
-    type: "Old Plane",
-    name: "Old Plane",
+    type: "OldPlane",
+    name: "OldPlane-9",
     link: "https://shopee.co.id/Oldplane-Kemeja-Pria-Premium-Casual-Lengan-Panjang-Kemeja-Kantor-Model-Slimfit-i.1306526001.26924904223?sp_atk=fdaf6a9e-6c71-4be9-92c6-2962751ecd41",
-    images: ["/images/produk/old-plane/p25.jpg"],
+    images: [
+      "/images/produk/old-plane/p25.jpg",
+      "/images/produk/old-plane/p26.jpg",
+    ],
   },
   {
-    type: "Old Plane",
-    name: "Old Plane",
+    type: "OldPlane",
+    name: "OldPlane-10",
     link: "https://shopee.co.id/Old-plane-kemeja-casual-premium-quality-i.1306526001.25390957314?sp_atk=eb6ecc69-ba33-4e4c-987d-61ee73f2b708",
-    images: ["/images/produk/old-plane/p1.jpg"],
+    images: [
+      "/images/produk/old-plane/p1.jpg",
+      "/images/produk/old-plane/p2.jpg",
+    ],
   },
   {
-    type: "Old Plane",
-    name: "Old Plane",
+    type: "OldPlane",
+    name: "OldPlane-11",
     link: "https://shopee.co.id/Old-plane-kemeja-casual-premium-quality-i.1306526001.25390957314?sp_atk=eb6ecc69-ba33-4e4c-987d-61ee73f2b708",
-    images: ["/images/produk/old-plane/p2.jpg"],
+    images: [
+      "/images/produk/old-plane/p3.jpg",
+      "/images/produk/old-plane/p4.jpg",
+    ],
   },
   {
-    type: "Old Plane",
-    name: "Old Plane",
+    type: "OldPlane",
+    name: "OldPlane-12",
     link: "https://shopee.co.id/Old-plane-kemeja-casual-premium-quality-i.1306526001.25390957314?sp_atk=eb6ecc69-ba33-4e4c-987d-61ee73f2b708",
-    images: ["/images/produk/old-plane/p6.jpg"],
+    images: [
+      "/images/produk/old-plane/p5.jpg",
+      "/images/produk/old-plane/p6.jpg",
+    ],
   },
 ];
