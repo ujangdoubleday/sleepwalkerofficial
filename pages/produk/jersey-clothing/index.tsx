@@ -1,9 +1,5 @@
 import { NextSeo } from "next-seo";
 import Image from "next/image";
-import { useRouter } from "next/router";
-import { kebabCase } from "lodash-es";
-import { useMemo, useState } from "react";
-import { useIsClient } from "usehooks-ts";
 import {
   Box,
   Container,
@@ -21,11 +17,14 @@ import {
   ModalBody,
   ModalCloseButton,
   useDisclosure,
-  AspectRatio
+  AspectRatio,
 } from "@/lib/ui";
-
 import { ImageSlider } from "@/components/ImageSlider/ImageSlider";
 import { BAJU, BAJU_TYPES } from "@/content/produk/jersey-and-clothing";
+import { useRouter } from "next/router";
+import { kebabCase } from "lodash-es";
+import { useMemo, useState } from "react";
+import { useIsClient } from "usehooks-ts";
 
 const filterOptions = [
   {
@@ -170,20 +169,19 @@ function Cards() {
 export default function JerseyDanClothing() {
   const router = useRouter();
   const isClient = useIsClient();
-
   return (
     <>
       <NextSeo
         title="Sleep Walker Produk | Divisi Jersey dan Clothing"
         description="Temukan koleksi produk Sleep Walker di divisi jersey dan clothing. Produk berkualitas tinggi untuk kenyamanan dan gaya Anda sehari-hari."
         openGraph={{
-          url: "https://sleepwalkerofficial.com/produk/jersey-clothing",
+          url: "https://www.sleepwalkerofficial.com/produk/jersey-clothing",
           title: "Sleep Walker Produk | Divisi Jersey dan Clothing",
           description:
             "Koleksi jersey dan clothing Sleep Walker untuk gaya dan kenyamanan Anda.",
           images: [
             {
-              url: "https://sleepwalkerofficial.com/images/logo_og.png",
+              url: "https://www.sleepwalkerofficial.com/images/logo_og.png",
               width: 800,
               height: 800,
               alt: "Sleep Walker Official",
