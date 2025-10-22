@@ -7,6 +7,55 @@ export const messages = defineMessages({
     defaultMessage: "Beranda",
   },
 
+  //PRODUK
+  produk: {
+    id: "nav.produk",
+    defaultMessage: "Produk",
+  },
+  jersey: {
+    id: "nav.jersey",
+    defaultMessage: "Jersey",
+  },
+  jerseyDeskripsi: {
+    id: "nav.jerseyDeskripsi",
+    defaultMessage: "Jersey futsal dan racing berkualitas tinggi dengan custom design.",
+  },
+  tshirt: {
+    id: "nav.tshirt",
+    defaultMessage: "T-Shirt",
+  },
+  tshirtDeskripsi: {
+    id: "nav.tshirtDeskripsi",
+    defaultMessage: "T-shirt polos dan custom dengan bahan berkualitas dan nyaman.",
+  },
+  hoodie: {
+    id: "nav.hoodie",
+    defaultMessage: "Hoodie",
+  },
+  hoodieDeskripsi: {
+    id: "nav.hoodieDeskripsi",
+    defaultMessage:
+      "Hoodie polos dan custom dengan bahan premium dan desain trendy.",
+  },
+  kemeja: {
+    id: "nav.kemeja",
+    defaultMessage: "Kemeja",
+  },
+  kemejaDeskripsi: {
+    id: "nav.kemejaDeskripsi",
+    defaultMessage:
+      "Kemeja formal dan casual dengan berbagai pilihan model dan warna.",
+  },
+  jaket: {
+    id: "nav.jaket",
+    defaultMessage: "Jaket",
+  },
+  jaketDeskripsi: {
+    id: "nav.jaketDeskripsi",
+    defaultMessage:
+      "Jaket casual dan motor dengan material berkualitas untuk berbagai aktivitas.",
+  },
+
   //TENTANG KAMI
   tentangKami: {
     id: "nav.tentangKami",
@@ -105,36 +154,7 @@ export const messages = defineMessages({
     defaultMessage: "Enhance your skills with our professional sessions.",
   },
 
-  //PRODUK
-  produk: {
-    id: "nav.produk",
-    defaultMessage: "Produk",
-  },
-  jerseyDanClothing: {
-    id: "nav.jerseyDanClothing",
-    defaultMessage: "Divisi Jersey dan Clothing",
-  },
-  jerseyDanClothingDeskripsi: {
-    id: "nav.jerseyDanClothingDeskripsi",
-    defaultMessage: "Custom and ready-stock jerseys of high quality.",
-  },
-  kemasan: {
-    id: "nav.kemasan",
-    defaultMessage: "Divisi Kemasan",
-  },
-  kemasanDeskripsi: {
-    id: "nav.kemasanDeskripsi",
-    defaultMessage: "Unique and functional packaging solutions.",
-  },
-  maklonKosmetik: {
-    id: "nav.maklonKosmetik",
-    defaultMessage: "Maklon Kosmetik",
-  },
-  maklonKosmetikDeskripsi: {
-    id: "nav.maklonKosmetikDeskripsi",
-    defaultMessage:
-      "High-quality cosmetic manufacturing tailored to your needs.",
-  },
+  
 
   //FAQ
   faq: {

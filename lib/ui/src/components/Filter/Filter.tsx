@@ -35,11 +35,8 @@ export function Filter({ options, selectedOption, onChange, ...rest }: Props) {
   return (
     <Flex
       justifyContent="center"
-      flexDirection={{
-        base: "column",
-        lg: "row",
-      }}
-      gap={3}
+      flexWrap="wrap"
+      gap={{ base: 2, md: 3 }}
       {...rest}
     >
       {options.map((option) => {
@@ -55,8 +52,8 @@ export function Filter({ options, selectedOption, onChange, ...rest }: Props) {
               offset="4px"
             >
               <Box
-                px={5}
-                py={3}
+                px={{ base: 3, md: 5 }}
+                py={{ base: 2, md: 3 }}
                 bg={selected ? "black" : "white"}
                 _hover={{ bg: selected ? "black" : "gray.100" }}
                 _focus={{ bg: selected ? "black" : "gray.100" }}
@@ -64,6 +61,7 @@ export function Filter({ options, selectedOption, onChange, ...rest }: Props) {
                 <Text
                   textAlign="center"
                   whiteSpace="nowrap"
+                  fontSize={{ base: "sm", md: "md" }}
                   color={selected ? "white" : undefined}
                 >
                   {option.label}

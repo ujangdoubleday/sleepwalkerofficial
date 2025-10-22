@@ -6,6 +6,42 @@ export const links = [
     href: "/",
   },
   {
+    label: messages.produk,
+    color: "yellow",
+    items: [
+      {
+        title: messages.jersey,
+        description: messages.jerseyDeskripsi,
+        href: "/produk/jersey",
+        image: "/images/nav/divisi-jersey.svg",
+      },
+      {
+        title: messages.tshirt,
+        description: messages.tshirtDeskripsi,
+        href: "/produk/t-shirt",
+        image: "/images/nav/divisi-kemasan.svg",
+      },
+      {
+        title: messages.hoodie,
+        description: messages.hoodieDeskripsi,
+        href: "/produk/hoodie",
+        image: "/images/nav/maklon-kosmetik.svg",
+      },
+      {
+        title: messages.kemeja,
+        description: messages.kemejaDeskripsi,
+        href: "/produk/kemeja",
+        image: "/images/nav/maklon-kosmetik.svg",
+      },
+      {
+        title: messages.jaket,
+        description: messages.jaketDeskripsi,
+        href: "/produk/jaket",
+        image: "/images/nav/maklon-kosmetik.svg",
+      },
+    ],
+  },
+  {
     label: messages.tentangKami,
     color: "brown",
     items: [
@@ -83,30 +119,7 @@ export const links = [
       },
     ],
   },
-  {
-    label: messages.produk,
-    color: "yellow",
-    items: [
-      {
-        title: messages.jerseyDanClothing,
-        description: messages.jerseyDanClothingDeskripsi,
-        href: "/produk/jersey-clothing",
-        image: "/images/nav/divisi-jersey.svg",
-      },
-      {
-        title: messages.kemasan,
-        description: messages.kemasanDeskripsi,
-        href: "/produk/kemasan",
-        image: "/images/nav/divisi-kemasan.svg",
-      },
-      {
-        title: messages.maklonKosmetik,
-        description: messages.maklonKosmetikDeskripsi,
-        href: "/produk/maklon-kosmetik",
-        image: "/images/nav/maklon-kosmetik.svg",
-      },
-    ],
-  },
+  
   {
     label: messages.faq,
     href: "/faq",

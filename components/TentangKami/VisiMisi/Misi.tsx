@@ -35,7 +35,7 @@ const messages = defineMessages({
   descMisiSatu: {
     id: "Misi.descMisiSatu",
     defaultMessage:
-      "Mengembangkan produk dan layanan yang kreatif dan berkualitas tinggi di bidang Jersey, Kemasan, Clothing, dan Maklon Kosmetik.",
+      "Mengembangkan produk clothing yang kreatif dan berkualitas tinggi seperti Jersey, T-Shirt, Hoodie, Kemeja, dan Jaket dengan desain modern dan bahan premium.",
   },
   misiDua: {
     id: "Misi.misiDua",
