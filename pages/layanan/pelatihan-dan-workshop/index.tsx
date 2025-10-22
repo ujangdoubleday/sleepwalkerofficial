@@ -1,12 +1,9 @@
 import { NextSeo } from "next-seo";
 import Image from "next/image";
-import { 
-  Box, 
-  AspectRatio
-} from "@/lib/ui";
+import { Box, AspectRatio } from "@/components/ui";
 
-import { PNW } from "@/components/Layanan/PelatihanDanWorkshop/PNW";
-import { HubungiKami } from "@/components/Layanan/PelatihanDanWorkshop/HubungiKami";
+import { PNW } from "@/components/features/layanan/PelatihanDanWorkshop/PNW";
+import { HubungiKami } from "@/components/features/layanan/PelatihanDanWorkshop/HubungiKami";
 
 export default function PelatihanDanWorkshop() {
   return (

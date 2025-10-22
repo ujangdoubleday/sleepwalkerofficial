@@ -1,4 +1,4 @@
-import { NavItems } from "@/lib/ui";
+import { NavItems } from "@/components/ui";
 import { useMemo } from "react";
 import { useIntl } from "react-intl";
 import { links } from "./links";

@@ -1,12 +1,9 @@
 import { NextSeo } from "next-seo";
 import Image from "next/image";
-import { 
-  Box, 
-  AspectRatio 
-} from "@/lib/ui";
+import { Box, AspectRatio } from "@/components/ui";
 
-import { MengapaKamiYa } from "@/components/Portofolio/MengapaKami/MengapaKami";
-import { HubungiKami } from "@/components/Portofolio/MengapaKami/HubungiKami";
+import { MengapaKamiYa } from "@/components/features/portofolio/MengapaKami/MengapaKami";
+import { HubungiKami } from "@/components/features/portofolio/MengapaKami/HubungiKami";
 
 export default function MengapaKami() {
   return (

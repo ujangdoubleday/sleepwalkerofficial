@@ -1,11 +1,8 @@
 import { NextSeo } from "next-seo";
 import Image from "next/image";
-import { 
-  Box, 
-  AspectRatio 
-} from "@/lib/ui";
+import { Box, AspectRatio } from "@/components/ui";
 
-import { Building } from "@/components/Building/Building";
+import { Building } from "@/components/common/Building/Building";
 
 export default function Penghargaan() {
   return (

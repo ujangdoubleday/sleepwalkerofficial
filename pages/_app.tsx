@@ -1,6 +1,6 @@
 import { AppProps } from "next/app";
 import Head from "next/head";
-import { SleepwalkerUIProvider, LoadFonts, MDXRenderer } from "@/lib/ui";
+import { SleepwalkerUIProvider, LoadFonts, MDXRenderer } from "@/components/ui";
 import { IntlProvider } from "@/intl/IntlProvider";
 import { GoogleAnalytics } from "nextjs-google-analytics";
 

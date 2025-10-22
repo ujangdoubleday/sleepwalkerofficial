@@ -1,13 +1,10 @@
 import { NextSeo } from "next-seo";
 import { defineMessages, useIntl } from "react-intl";
 import Image from "next/image";
-import { FancyLinkSection } from "@/components/FancyLinkSection/FancyLinkSection";
-import { 
-  Box, 
-  AspectRatio
-} from "@/lib/ui";
+import { FancyLinkSection } from "@/components/common/FancyLinkSection/FancyLinkSection";
+import { Box, AspectRatio } from "@/components/ui";
 
-import { Misi } from "@/components/TentangKami/VisiMisi/Misi";
+import { Misi } from "@/components/features/tentang-kami/VisiMisi/Misi";
 
 const messages = defineMessages({
   visi: {

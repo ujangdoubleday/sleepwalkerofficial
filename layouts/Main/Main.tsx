@@ -1,10 +1,7 @@
-import { 
-  Flex, 
-  chakra 
-} from "@/lib/ui";
+import { Flex, chakra } from "@/components/ui";
 
-import { Footer } from "@/components/Footer/Footer";
-import { NavBar } from "@/components/NavBar/NavBar";
+import { Footer } from "@/components/layout/Footer/Footer";
+import { NavBar } from "@/components/layout/NavBar/NavBar";
 
 export function MainLayout({ children }: { children: React.ReactNode }) {
   return (

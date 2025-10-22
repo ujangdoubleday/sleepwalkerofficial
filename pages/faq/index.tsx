@@ -4,14 +4,9 @@ import { parseFileByPath, renderMarkdown } from "@/lib/markdown";
 import { MDXRemoteProps } from "next-mdx-remote";
 import { NextSeo } from "next-seo";
 import Image from "next/image";
-import { 
-  Box, 
-  Container, 
-  MDXRenderer, 
-  AspectRatio
-} from "@/lib/ui";
+import { Box, Container, MDXRenderer, AspectRatio } from "@/components/ui";
 
-import { FaqMoreInfo } from "@/components/FaqMoreInfo/FaqMoreInfo";
+import { FaqMoreInfo } from "@/components/features/faq/FaqMoreInfo";
 
 type Props = {
   markdown: MDXRemoteProps;

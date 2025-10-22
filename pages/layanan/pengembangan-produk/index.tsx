@@ -1,18 +1,13 @@
 import { NextSeo } from "next-seo";
 import Image from "next/image";
-import { FancyLinkSection } from "@/components/FancyLinkSection/FancyLinkSection";
-import { 
-  Box, 
-  AspectRatio, 
-  Container, 
-  Text 
-} from "@/lib/ui";
+import { FancyLinkSection } from "@/components/common/FancyLinkSection/FancyLinkSection";
+import { Box, AspectRatio, Container, Text } from "@/components/ui";
 
-import { Keunggulan } from "@/components/Layanan/PengembanganProduk/Keunggulan";
-import { ProsesPengembangan } from "@/components/Layanan/PengembanganProduk/ProsesPengembangan";
-import { ToolsYangDigunakan } from "@/components/Layanan/PengembanganProduk/ToolsYangDigunakan";
-import { Quotes } from "@/components/Layanan/PengembanganProduk/Quotes";
-import { HubungiKami } from "@/components/Layanan/PengembanganProduk/HubungiKami";
+import { Keunggulan } from "@/components/features/layanan/PengembanganProduk/Keunggulan";
+import { ProsesPengembangan } from "@/components/features/layanan/PengembanganProduk/ProsesPengembangan";
+import { ToolsYangDigunakan } from "@/components/features/layanan/PengembanganProduk/ToolsYangDigunakan";
+import { Quotes } from "@/components/features/layanan/PengembanganProduk/Quotes";
+import { HubungiKami } from "@/components/features/layanan/PengembanganProduk/HubungiKami";
 
 export default function PengembanganProduk() {
   return (

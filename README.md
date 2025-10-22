@@ -4,15 +4,15 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 1. Clone repo
 
-- `git clone git@github.com:ujangbedog/sleepwalkerofficial.git`
+- `git clone git@github.com:ujangdoubleday/sleepwalkerofficial.git`
 
 2. Install dependencies
 
-- `yarn install`
+- `npm install`
 
 3. Start the development server
 
-- `yarn dev`
+- `npm run dev`
 
 4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the site
 

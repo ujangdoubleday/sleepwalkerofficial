@@ -10,16 +10,16 @@ import {
   Filter,
   useDisclosure,
   AspectRatio,
-} from "@/lib/ui";
-import { JERSEY, JERSEY_TYPES } from "@/content/produk/jersey";
+} from "@/components/ui";
+import { JERSEY, JERSEY_TYPES } from "@/data/produk/jersey";
 import { useRouter } from "next/router";
 import { kebabCase } from "lodash-es";
 import { useIsClient } from "usehooks-ts";
 import { useFilter } from "@/hooks/useFilter";
 import ProductCard, {
   ProductCardSkeleton,
-} from "@/components/Produk/ProductCard";
-import ProductModal from "@/components/Produk/ProductModal";
+} from "@/components/features/produk/ProductCard";
+import ProductModal from "@/components/features/produk/ProductModal";
 
 interface FilterOption {
   label: string;

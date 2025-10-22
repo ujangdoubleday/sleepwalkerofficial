@@ -10,16 +10,16 @@ import {
   Filter,
   useDisclosure,
   AspectRatio,
-} from "@/lib/ui";
-import { KEMEJA, KEMEJA_TYPES } from "@/content/produk/kemeja";
+} from "@/components/ui";
+import { KEMEJA, KEMEJA_TYPES } from "@/data/produk/kemeja";
 import { useRouter } from "next/router";
 import { kebabCase } from "lodash-es";
 import { useIsClient } from "usehooks-ts";
 import { useFilter } from "@/hooks/useFilter";
 import ProductCard, {
   ProductCardSkeleton,
-} from "@/components/Produk/ProductCard";
-import ProductModal from "@/components/Produk/ProductModal";
+} from "@/components/features/produk/ProductCard";
+import ProductModal from "@/components/features/produk/ProductModal";
 
 interface FilterOption {
   label: string;
