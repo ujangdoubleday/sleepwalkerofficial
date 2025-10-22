@@ -4,7 +4,7 @@ export function About() {
   return (
     <FancyLinkSection
       heading="Tentang Kami"
-      description={`Sleep Walker adalah tim yang berdedikasi menyediakan solusi terbaik dengan fokus pada konsultasi pengembangan produk, dukungan pelanggan, dan pelatihan. Kami memiliki divisi-divisi seperti Jersey, Kemasan, Clothing, dan Maklon Kosmetik yang menawarkan produk berkualitas tinggi untuk berbagai kebutuhan.`}
+      description={`Sleep Walker adalah tim yang berdedikasi menyediakan produk clothing berkualitas tinggi dengan fokus pada kualitas, kenyamanan, dan gaya modern. Kami menawarkan berbagai pilihan produk seperti Jersey, T-Shirt, Hoodie, Kemeja, dan Jaket untuk berbagai kebutuhan fashion Anda.`}
       ctaText="Selengkapnya"
       ctaLink="/tentang-kami/sejarah-kami"
       imageUrl="/images/home/2.jpg"

@@ -16,7 +16,7 @@ export default function Index() {
           url: "https://sleepwalkerofficial.com/",
           title: "Sleep Walker Official",
           description:
-            "Sleep Walker adalah tim yang berdedikasi menyediakan solusi terbaik dengan fokus pada konsultasi pengembangan produk, dukungan pelanggan, dan pelatihan. Kami memiliki divisi-divisi seperti Jersey, Kemasan, Clothing, dan Maklon Kosmetik yang menawarkan produk berkualitas tinggi untuk berbagai kebutuhan.",
+            "Sleep Walker adalah tim yang berdedikasi menyediakan produk clothing berkualitas tinggi dengan fokus pada kualitas, kenyamanan, dan gaya modern. Kami menawarkan berbagai pilihan produk seperti Jersey, T-Shirt, Hoodie, Kemeja, dan Jaket untuk berbagai kebutuhan fashion Anda.",
           images: [
             {
               url: "https://sleepwalkerofficial.com/images/logo_og.png",

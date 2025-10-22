@@ -55,7 +55,7 @@ const messages = defineMessages({
   descMengapaTilu: {
     id: "MengapaKami.descMengapaTilu",
     defaultMessage:
-      "Mulai dari Jersey, Clothing, Kemasan, hingga Maklon Kosmetik, kami menawarkan solusi lengkap untuk berbagai kebutuhan bisnis dan gaya hidup Anda.",
+      "Mulai dari Jersey, T-Shirt, Hoodie, Kemeja, hingga Jaket, kami menawarkan berbagai pilihan produk clothing berkualitas untuk kebutuhan fashion dan gaya hidup Anda.",
   },
   mengapaOpat: {
     id: "MengapaKami.mengapaOpat",

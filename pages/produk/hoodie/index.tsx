@@ -11,15 +11,15 @@ import {
   useDisclosure,
   AspectRatio,
 } from "@/lib/ui";
-import { BAJU, BAJU_TYPES } from "@/content/produk/jersey-and-clothing";
+import { HOODIE, HOODIE_TYPES } from "@/content/produk/hoodie";
 import { useRouter } from "next/router";
 import { kebabCase } from "lodash-es";
 import { useIsClient } from "usehooks-ts";
 import { useFilter } from "@/hooks/useFilter";
 import ProductCard, {
   ProductCardSkeleton,
-} from "@/pages/produk/jersey-clothing/components/ProductCard";
-import ProductModal from "@/pages/produk/jersey-clothing/components/ProductModal";
+} from "@/components/Produk/ProductCard";
+import ProductModal from "@/components/Produk/ProductModal";
 
 interface FilterOption {
   label: string;
@@ -28,13 +28,13 @@ interface FilterOption {
 
 const filterOptions: FilterOption[] = [
   { label: "Semua", value: "all" },
-  ...BAJU_TYPES.map((type) => ({ label: type, value: kebabCase(type) })),
+  ...HOODIE_TYPES.map((type) => ({ label: type, value: kebabCase(type) })),
 ];
 
 function Cards() {
   const { defaultOption, filteredItems, handleFilterChange } = useFilter(
     filterOptions,
-    BAJU
+    HOODIE
   );
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -45,7 +45,7 @@ function Cards() {
         options={filterOptions}
         selectedOption={defaultOption || filterOptions[0]}
         onChange={handleFilterChange}
-        mb={16}
+        mb={{ base: 6, md: 8 }}
       />
       <Grid
         templateColumns={{
@@ -76,37 +76,29 @@ function Cards() {
   );
 }
 
-export default function JerseyDanClothing() {
+export default function HoodiePage() {
   const router = useRouter();
   const isClient = useIsClient();
 
   return (
     <>
       <NextSeo
-        title="Sleep Walker Produk | Divisi Jersey dan Clothing"
-        description="Temukan koleksi produk Sleep Walker di divisi jersey dan clothing."
+        title="Sleep Walker Produk | Hoodie"
+        description="Temukan koleksi hoodie Sleep Walker dengan berbagai pilihan."
       />
-      <Box>
-        <AspectRatio position="relative" ratio={1570 / 524}>
-          <Image
-            priority
-            src="/images/hero/duabelas.png"
-            alt="Hero Sejarah Kami"
-            style={{ objectFit: "contain" }}
-            fill
-          />
-        </AspectRatio>
+      <Box as="section" pt={{ base: 8, md: 10 }} pb={{ base: 6, md: 8 }}>
+        <Container maxW="container.2xl" px={{ base: 5, lg: 10, xl: 16 }}>
+          <Box mb={{ base: 6, md: 8 }}>
+            <Text textStyle="h3" mb={2} textAlign="center">
+              Hoodie
+            </Text>
+          </Box>
+
+          <Suspense fallback={<ProductCardSkeleton />}>
+            {isClient && router.isReady && <Cards />}
+          </Suspense>
+        </Container>
       </Box>
-      <br />
-      <Container w="100%" maxW="container.2xl" px={{ base: 5, lg: 10, xl: 16 }}>
-        <Text textStyle="h5" my={{ base: "5px" }} textAlign="center">
-          Kategori
-        </Text>
-        <Suspense fallback={<ProductCardSkeleton />}>
-          {isClient && router.isReady && <Cards />}
-        </Suspense>
-      </Container>
-      <br />
     </>
   );
 }

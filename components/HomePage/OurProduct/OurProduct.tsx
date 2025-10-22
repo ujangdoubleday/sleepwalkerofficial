@@ -16,8 +16,7 @@ import {
 } from "@/lib/ui";
 
 import jersey from "@/assets/Homepage/OurProduct/jersey.jpg";
-import Packaging from "@/assets/Homepage/OurProduct/packaging.jpg";
-import Maklon from "@/assets/Homepage/OurProduct/maklon.jpg";
+import clothing from "@/assets/Homepage/OurProduct/clothing.jpg";
 
 const messages = defineMessages({
   title: {
@@ -27,62 +26,76 @@ const messages = defineMessages({
   subTitle: {
     id: "OurProduct.subTitle",
     defaultMessage:
-      "Sleep Walker menyediakan produk berkualitas tinggi dalam divisi Jersey, Kemasan, Clothing, dan Maklon Kosmetik. Produk-produk kami dirancang dengan fokus pada kualitas, kenyamanan, dan fungsionalitas, memastikan solusi yang sesuai untuk berbagai kebutuhan Anda.",
+      "Sleep Walker menyediakan produk clothing berkualitas tinggi dengan berbagai pilihan. Dari jersey olahraga hingga fashion casual, semua dirancang dengan fokus pada kualitas, kenyamanan, dan gaya yang modern.",
   },
 
   jerseyTitle: {
-    id: "OurProduct.title",
-    defaultMessage: "Divisi Jersey dan Clothing",
+    id: "OurProduct.jerseyTitle",
+    defaultMessage: "Jersey",
   },
   jerseyDescription: {
-    id: "OurProduct.description",
+    id: "OurProduct.jerseyDescription",
     defaultMessage:
-      "Create your own unique design with our high-quality custom jerseys, tailored to your style and needs.",
+      "Jersey futsal dan racing berkualitas tinggi dengan desain custom dan ready stock.",
   },
   jerseyLink: {
     id: "OurProduct.jerseyLink",
     defaultMessage: "Selengkapnya",
   },
 
-  kemasanTitle: {
-    id: "OurProduct.kemasanTitle",
-    defaultMessage: "Divisi Kemasan",
+  tshirtTitle: {
+    id: "OurProduct.tshirtTitle",
+    defaultMessage: "T-Shirt",
   },
-  kemasanDescription: {
-    id: "OurProduct.kemasanDescription",
+  tshirtDescription: {
+    id: "OurProduct.tshirtDescription",
     defaultMessage:
-      "Choose from our ready-stock jerseys, featuring stylish designs and available for immediate purchase.",
+      "T-shirt polos dan custom dengan bahan berkualitas dan nyaman dipakai.",
   },
-  kemasanLink: {
-    id: "OurProduct.kemasanLink",
+  tshirtLink: {
+    id: "OurProduct.tshirtLink",
     defaultMessage: "Selengkapnya",
   },
 
-  clothingTitle: {
-    id: "OurProduct.clothingTitle",
-    defaultMessage: "Divisi Clothing",
+  hoodieTitle: {
+    id: "OurProduct.hoodieTitle",
+    defaultMessage: "Hoodie",
   },
-  clothingDescription: {
-    id: "OurProduct.clothingDescription",
+  hoodieDescription: {
+    id: "OurProduct.hoodieDescription",
     defaultMessage:
-      "Choose from our ready-stock jerseys, featuring stylish designs and available for immediate purchase.",
+      "Hoodie polos dan custom dengan bahan premium dan desain trendy.",
   },
-  clothingLink: {
-    id: "OurProduct.clothingLink",
+  hoodieLink: {
+    id: "OurProduct.hoodieLink",
     defaultMessage: "Selengkapnya",
   },
 
-  maklonTitle: {
-    id: "OurProduct.maklonTitle",
-    defaultMessage: "Maklon Kosmetik",
+  kemejaTitle: {
+    id: "OurProduct.kemejaTitle",
+    defaultMessage: "Kemeja",
   },
-  maklonDescription: {
-    id: "OurProduct.maklonDescription",
+  kemejaDescription: {
+    id: "OurProduct.kemejaDescription",
     defaultMessage:
-      "Choose from our ready-stock jerseys, featuring stylish designs and available for immediate purchase.",
+      "Kemeja formal dan casual dengan berbagai pilihan model dan warna.",
   },
-  maklonLink: {
-    id: "OurProduct.maklonLink",
+  kemejaLink: {
+    id: "OurProduct.kemejaLink",
+    defaultMessage: "Selengkapnya",
+  },
+
+  jaketTitle: {
+    id: "OurProduct.jaketTitle",
+    defaultMessage: "Jaket",
+  },
+  jaketDescription: {
+    id: "OurProduct.jaketDescription",
+    defaultMessage:
+      "Jaket casual dan motor dengan material berkualitas untuk berbagai aktivitas.",
+  },
+  jaketLink: {
+    id: "OurProduct.jaketLink",
     defaultMessage: "Selengkapnya",
   },
 });
@@ -118,7 +131,8 @@ export function OurProduct() {
         <Grid
           templateColumns={{
             base: "1fr",
-            lg: "1fr 1fr",
+            md: "1fr 1fr",
+            lg: "repeat(3, 1fr)",
           }}
           gap={{
             base: 6,
@@ -130,7 +144,7 @@ export function OurProduct() {
             <ItemCard
               name={formatMessage(messages.jerseyTitle)}
               description={formatMessage(messages.jerseyDescription)}
-              href="/produk/jersey-clothing"
+              href="/produk/jersey"
               ctaText={formatMessage(messages.jerseyLink)}
               imageSrc={jersey}
             />
@@ -138,21 +152,41 @@ export function OurProduct() {
 
           <GridItem display="flex" alignItems="stretch">
             <ItemCard
-              name={formatMessage(messages.kemasanTitle)}
-              description={formatMessage(messages.kemasanDescription)}
-              href="/produk/kemasan"
-              ctaText={formatMessage(messages.kemasanLink)}
-              imageSrc={Packaging}
+              name={formatMessage(messages.tshirtTitle)}
+              description={formatMessage(messages.tshirtDescription)}
+              href="/produk/t-shirt"
+              ctaText={formatMessage(messages.tshirtLink)}
+              imageSrc={clothing}
             />
           </GridItem>
 
           <GridItem display="flex" alignItems="stretch">
             <ItemCard
-              name={formatMessage(messages.maklonTitle)}
-              description={formatMessage(messages.maklonDescription)}
-              href="/produk/maklon-kosmetik"
-              ctaText={formatMessage(messages.maklonLink)}
-              imageSrc={Maklon}
+              name={formatMessage(messages.hoodieTitle)}
+              description={formatMessage(messages.hoodieDescription)}
+              href="/produk/hoodie"
+              ctaText={formatMessage(messages.hoodieLink)}
+              imageSrc={clothing}
+            />
+          </GridItem>
+
+          <GridItem display="flex" alignItems="stretch">
+            <ItemCard
+              name={formatMessage(messages.kemejaTitle)}
+              description={formatMessage(messages.kemejaDescription)}
+              href="/produk/kemeja"
+              ctaText={formatMessage(messages.kemejaLink)}
+              imageSrc={clothing}
+            />
+          </GridItem>
+
+          <GridItem display="flex" alignItems="stretch">
+            <ItemCard
+              name={formatMessage(messages.jaketTitle)}
+              description={formatMessage(messages.jaketDescription)}
+              href="/produk/jaket"
+              ctaText={formatMessage(messages.jaketLink)}
+              imageSrc={clothing}
             />
           </GridItem>
         </Grid>

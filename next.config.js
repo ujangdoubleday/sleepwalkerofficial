@@ -59,7 +59,7 @@ ${isDev ? '' : 'upgrade-insecure-requests;'}
       },
       {
         source: "/produk",
-        destination: "/produk/jersey-clothing",
+        destination: "/produk/jersey",
         permanent: true,
       },
     ];
