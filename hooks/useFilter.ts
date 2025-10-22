@@ -1,17 +1,11 @@
-import { useMemo } from "react";
+import { Key, useMemo } from "react";
 import { useRouter } from "next/router";
 import { kebabCase } from "lodash-es";
+import type { Product } from "@/data/produk/types";
 
 interface FilterOption {
   label: string;
   value: string;
-}
-
-interface Product {
-  name: string;
-  type: string;
-  images: string[];
-  link: string;
 }
 
 export const useFilter = (filterOptions: FilterOption[], items: Product[]) => {

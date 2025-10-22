@@ -1,51 +1,54 @@
-import { Box, Text, HStack, Skeleton, SkeletonText } from "@chakra-ui/react";
-import { ImageSlider } from "@/components/common/ImageSlider/ImageSlider";
-import { ShadowBox, ArrowButton } from "@/components/ui";
-
-interface Product {
-  name: string;
-  type: string;
-  images: string[];
-  link: string;
-}
+import { Box, Text, Skeleton, SkeletonText, HStack } from "@chakra-ui/react";
+import Image from "next/image";
+import Link from "next/link";
+import { ShadowBox } from "@/components/ui";
+import type { Product } from "@/data/produk/types";
 
 interface ProductCardProps {
   product: Product;
-  onImageClick: (image: string) => void;
+  category: string;
 }
 
-const ProductCard = ({ product, onImageClick }: ProductCardProps) => {
+const ProductCard = ({ product, category }: ProductCardProps) => {
+  const mainImage = product.images[0];
+
   return (
-    <ShadowBox
-      shadowColor="white"
-      borderWidth="2px"
-      borderRadius="4px"
-      w="100%"
-    >
-      <ImageSlider
-        images={product.images}
-        alt={product.name}
-        onImageClick={onImageClick}
-      />
-      <Box p={4} pb={6}>
-        <Text textStyle="sm" mb={1}>
-          {product.type}
-        </Text>
-        <HStack gap={2}>
-          <ArrowButton
-            as="a"
-            target="_blank"
-            rel="noreferrer"
-            href={product.link}
-            size="sm"
-            colorScheme="white"
-            arrowStyle="tilted"
+    <Link href={`/produk/${category}/${product.id}`} passHref legacyBehavior>
+      <Box
+        as="a"
+        display="block"
+        cursor="pointer"
+        transition="transform 0.2s"
+        _hover={{ transform: "translateY(-4px)" }}
+      >
+        <ShadowBox
+          shadowColor="white"
+          borderWidth="2px"
+          borderRadius="4px"
+          w="100%"
+        >
+          <Box
+            position="relative"
+            width="100%"
+            height={{ base: "350px", md: "400px", lg: "450px" }}
+            overflow="hidden"
+            bg="gray.50"
           >
-            Pesan Sekarang
-          </ArrowButton>
-        </HStack>
+            <Image
+              src={product.images[0]}
+              alt={product.name}
+              fill
+              style={{ objectFit: "cover" }}
+            />
+          </Box>
+          <Box p={4} pb={6}>
+            <Text textStyle="base" fontWeight="semibold" mb={1}>
+              {product.name}
+            </Text>
+          </Box>
+        </ShadowBox>
       </Box>
-    </ShadowBox>
+    </Link>
   );
 };
 

@@ -1,17 +1,8 @@
-import { Suspense, useState } from "react";
+import { Suspense } from "react";
 import { NextSeo } from "next-seo";
-import Image from "next/image";
-import {
-  Box,
-  Container,
-  Text,
-  Grid,
-  GridItem,
-  Filter,
-  useDisclosure,
-  AspectRatio,
-} from "@/components/ui";
+import { Box, Container, Text, Grid, GridItem, Filter } from "@/components/ui";
 import { KEMEJA, KEMEJA_TYPES } from "@/data/produk/kemeja";
+import type { Product } from "@/data/produk/types";
 import { useRouter } from "next/router";
 import { kebabCase } from "lodash-es";
 import { useIsClient } from "usehooks-ts";
@@ -19,7 +10,6 @@ import { useFilter } from "@/hooks/useFilter";
 import ProductCard, {
   ProductCardSkeleton,
 } from "@/components/features/produk/ProductCard";
-import ProductModal from "@/components/features/produk/ProductModal";
 
 interface FilterOption {
   label: string;
@@ -36,8 +26,6 @@ function Cards() {
     filterOptions,
     KEMEJA
   );
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
-  const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <>
@@ -56,22 +44,11 @@ function Cards() {
         gap={6}
       >
         {filteredItems.map((item) => (
-          <GridItem key={item.name} display="flex">
-            <ProductCard
-              product={item}
-              onImageClick={(image) => {
-                setSelectedImage(image);
-                onOpen();
-              }}
-            />
+          <GridItem key={item.id} w="100%">
+            <ProductCard product={item} category="kemeja" />
           </GridItem>
         ))}
       </Grid>
-      <ProductModal
-        isOpen={isOpen}
-        onClose={onClose}
-        selectedImage={selectedImage}
-      />
     </>
   );
 }
