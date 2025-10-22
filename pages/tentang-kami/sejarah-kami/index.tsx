@@ -1,11 +1,8 @@
 import { NextSeo } from "next-seo";
 import Image from "next/image";
-import { 
-  Box, 
-  AspectRatio
-} from "@/lib/ui";
+import { Box, AspectRatio } from "@/components/ui";
 
-import { Sejarah } from "@/components/TentangKami/Sejarah/Sejarah";
+import { Sejarah } from "@/components/features/tentang-kami/Sejarah/Sejarah";
 
 export default function SejarahKami() {
   return (

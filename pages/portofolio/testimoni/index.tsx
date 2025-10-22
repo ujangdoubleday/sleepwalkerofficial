@@ -1,12 +1,9 @@
 import { NextSeo } from "next-seo";
 import Image from "next/image";
-import { 
-  Box, 
-  AspectRatio 
-} from "@/lib/ui";
+import { Box, AspectRatio } from "@/components/ui";
 
-import { HubungiKami } from "@/components/Portofolio/Testimoni/HubungiKami";
-import { Quotes } from "@/components/Portofolio/Testimoni/Quotes";
+import { HubungiKami } from "@/components/features/portofolio/Testimoni/HubungiKami";
+import { Quotes } from "@/components/features/portofolio/Testimoni/Quotes";
 
 export default function Testimoni() {
   return (

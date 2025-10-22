@@ -1,10 +1,10 @@
 import { NextSeo } from "next-seo";
 
-import { Hero } from "@/components/HomePage/Hero/Hero";
-import { About } from "@/components/HomePage/About/About";
-import { WhySleepWalker } from "@/components/HomePage/WhySleepWalker/WhySleepWalker";
-import { Backers } from "@/components/HomePage/Backers/Backers";
-import { OurProduct } from "@/components/HomePage/OurProduct/OurProduct";
+import { Hero } from "@/components/features/home/Hero/Hero";
+import { About } from "@/components/features/home/About/About";
+import { WhySleepWalker } from "@/components/features/home/WhySleepWalker/WhySleepWalker";
+import { Backers } from "@/components/features/home/Backers/Backers";
+import { OurProduct } from "@/components/features/home/OurProduct/OurProduct";
 
 export default function Index() {
   return (

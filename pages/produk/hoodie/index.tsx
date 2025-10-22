@@ -10,16 +10,16 @@ import {
   Filter,
   useDisclosure,
   AspectRatio,
-} from "@/lib/ui";
-import { HOODIE, HOODIE_TYPES } from "@/content/produk/hoodie";
+} from "@/components/ui";
+import { HOODIE, HOODIE_TYPES } from "@/data/produk/hoodie";
 import { useRouter } from "next/router";
 import { kebabCase } from "lodash-es";
 import { useIsClient } from "usehooks-ts";
 import { useFilter } from "@/hooks/useFilter";
 import ProductCard, {
   ProductCardSkeleton,
-} from "@/components/Produk/ProductCard";
-import ProductModal from "@/components/Produk/ProductModal";
+} from "@/components/features/produk/ProductCard";
+import ProductModal from "@/components/features/produk/ProductModal";
 
 interface FilterOption {
   label: string;

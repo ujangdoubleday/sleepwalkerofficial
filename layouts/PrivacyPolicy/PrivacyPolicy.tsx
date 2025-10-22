@@ -1,10 +1,6 @@
 import { ComponentProps } from "react";
-import { Container } from "@/lib/ui";
-import { 
-  Heading, 
-  Box, 
-  MDXRenderer 
-} from "@/lib/ui";
+import { Container } from "@/components/ui";
+import { Heading, Box, MDXRenderer } from "@/components/ui";
 
 type Props = {
   markdown: ComponentProps<typeof MDXRenderer>["markdown"];

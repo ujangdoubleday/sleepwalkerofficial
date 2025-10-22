@@ -1,12 +1,9 @@
 import { NextSeo } from "next-seo";
 import Image from "next/image";
-import { FancyLinkSection } from "@/components/FancyLinkSection/FancyLinkSection";
-import { 
-  Box, 
-  AspectRatio 
-} from "@/lib/ui";
+import { FancyLinkSection } from "@/components/common/FancyLinkSection/FancyLinkSection";
+import { Box, AspectRatio } from "@/components/ui";
 
-import { HubungiKami } from "@/components/Portofolio/ProyekKlien/HubungiKami";
+import { HubungiKami } from "@/components/features/portofolio/ProyekKlien/HubungiKami";
 
 export default function ProyekKlien() {
   return (

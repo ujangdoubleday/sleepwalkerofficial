@@ -1,9 +1,6 @@
-import { 
-  Flex, 
-  chakra 
-} from "@/lib/ui";
+import { Flex, chakra } from "@/components/ui";
 
-import './Maintenance.module.css';
+import "./Maintenance.module.css";
 
 export function MaintenanceLayout({ children }: { children: React.ReactNode }) {
   return (

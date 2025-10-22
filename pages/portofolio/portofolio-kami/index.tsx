@@ -1,14 +1,9 @@
 import { NextSeo } from "next-seo";
 import Image from "next/image";
-import { FancyLinkSection } from "@/components/FancyLinkSection/FancyLinkSection";
-import { 
-  Box, 
-  Container, 
-  Text, 
-  AspectRatio 
-} from "@/lib/ui";
+import { FancyLinkSection } from "@/components/common/FancyLinkSection/FancyLinkSection";
+import { Box, Container, Text, AspectRatio } from "@/components/ui";
 
-import { HubungiKami } from "@/components/Portofolio/LatarBelakang/HubungiKami";
+import { HubungiKami } from "@/components/features/portofolio/LatarBelakang/HubungiKami";
 
 export default function PortofolioKami() {
   return (

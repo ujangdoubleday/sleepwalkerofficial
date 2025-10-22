@@ -12,9 +12,9 @@ import {
   ShadowBox,
   AspectRatio,
   useFilterOptions,
-} from "@/lib/ui";
+} from "@/components/ui";
 
-import { TIM, NAMA } from "@/content/tentang-kami/tim";
+import { TIM, NAMA } from "@/data/tentang-kami/tim";
 
 const filterOptions = [
   {

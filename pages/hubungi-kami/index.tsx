@@ -9,8 +9,8 @@ import {
   Grid,
   ShadowBox,
   AspectRatio,
-  Flex
-} from "@/lib/ui";
+  Flex,
+} from "@/components/ui";
 
 const messages = defineMessages({
   hubungiKami: {

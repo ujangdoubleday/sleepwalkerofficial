@@ -5,7 +5,7 @@ import { PrivacyPolicyLayout } from "@/layouts/PrivacyPolicy/PrivacyPolicy";
 import { ComponentProps } from "react";
 import { parseFileByPath, renderMarkdown } from "@/lib/markdown";
 import { assertString } from "@/lib/utils";
-import { MDXRenderer } from "@/lib/ui";
+import { MDXRenderer } from "@/components/ui";
 
 type Props = {
   markdown: ComponentProps<typeof MDXRenderer>["markdown"];
