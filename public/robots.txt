@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.sleepwalkerofficial.com/
+Host: https://sleepwalkerofficial.com/
 
 # Sitemaps
-Sitemap: https://www.sleepwalkerofficial.com/sitemap.xml
+Sitemap: https://sleepwalkerofficial.com/sitemap.xml
