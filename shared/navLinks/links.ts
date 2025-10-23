@@ -7,37 +7,37 @@ export const links = [
   },
   {
     label: messages.produk,
-    color: "yellow",
+    color: "blue",
     items: [
       {
         title: messages.jersey,
         description: messages.jerseyDeskripsi,
         href: "/produk/jersey",
-        image: "/images/nav/divisi-jersey.svg",
+        image: "/images/nav/jersey.svg",
       },
       {
         title: messages.tshirt,
         description: messages.tshirtDeskripsi,
         href: "/produk/t-shirt",
-        image: "/images/nav/divisi-kemasan.svg",
+        image: "/images/nav/t-shirt.svg",
       },
       {
         title: messages.hoodie,
         description: messages.hoodieDeskripsi,
         href: "/produk/hoodie",
-        image: "/images/nav/maklon-kosmetik.svg",
+        image: "/images/nav/hoodie.svg",
       },
       {
         title: messages.kemeja,
         description: messages.kemejaDeskripsi,
         href: "/produk/kemeja",
-        image: "/images/nav/maklon-kosmetik.svg",
+        image: "/images/nav/kemeja.svg",
       },
       {
         title: messages.jaket,
         description: messages.jaketDeskripsi,
         href: "/produk/jaket",
-        image: "/images/nav/maklon-kosmetik.svg",
+        image: "/images/nav/jaket.svg",
       },
     ],
   },
@@ -119,7 +119,7 @@ export const links = [
       },
     ],
   },
-  
+
   {
     label: messages.faq,
     href: "/faq",

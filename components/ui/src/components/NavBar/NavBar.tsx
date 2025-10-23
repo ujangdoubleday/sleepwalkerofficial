@@ -47,7 +47,7 @@ export function NavBar({ content, sticky }: Props) {
       <HStack alignItems="center">
         <Link href="/">
           <Image
-            width={130}
+            width={160}
             height={14}
             src="/images/logo.svg"
             alt="Sleep Walker Official"
